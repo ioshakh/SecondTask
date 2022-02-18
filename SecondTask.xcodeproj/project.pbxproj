@@ -13,6 +13,9 @@
 		BE2CDE6927BEFF22003669A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE2CDE6827BEFF22003669A0 /* Assets.xcassets */; };
 		BE2CDE6C27BEFF22003669A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2CDE6A27BEFF22003669A0 /* LaunchScreen.storyboard */; };
 		BE2CDE7727BF0007003669A0 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CDE7627BF0007003669A0 /* FirstVC.swift */; };
+		BE2CDE7A27BF0331003669A0 /* Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CDE7927BF0331003669A0 /* Extras.swift */; };
+		BE2CDE8027BF03D7003669A0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CDE7F27BF03D7003669A0 /* Extensions.swift */; };
+		BE2CDE8727BF0A47003669A0 /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CDE8627BF0A47003669A0 /* ForecastCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		BE2CDE6B27BEFF22003669A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE2CDE6D27BEFF22003669A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE2CDE7627BF0007003669A0 /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		BE2CDE7927BF0331003669A0 /* Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extras.swift; sourceTree = "<group>"; };
+		BE2CDE7F27BF03D7003669A0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BE2CDE8627BF0A47003669A0 /* ForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCell.swift; sourceTree = "<group>"; };
 		CA595D616B1376122D0039B9 /* Pods_SecondTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecondTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB405D7A42BB377F86BEFB06 /* Pods-SecondTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecondTask.release.xcconfig"; path = "Target Support Files/Pods-SecondTask/Pods-SecondTask.release.xcconfig"; sourceTree = "<group>"; };
 		F227ED68B7B58E98E2BBCE88 /* Pods-SecondTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecondTask.debug.xcconfig"; path = "Target Support Files/Pods-SecondTask/Pods-SecondTask.debug.xcconfig"; sourceTree = "<group>"; };
@@ -46,7 +52,6 @@
 				F227ED68B7B58E98E2BBCE88 /* Pods-SecondTask.debug.xcconfig */,
 				CB405D7A42BB377F86BEFB06 /* Pods-SecondTask.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -80,6 +85,10 @@
 			isa = PBXGroup;
 			children = (
 				BE2CDE7327BEFF5B003669A0 /* Application */,
+				BE2CDE7B27BF035D003669A0 /* Models */,
+				BE2CDE7E27BF03C4003669A0 /* Extensions */,
+				BE2CDE7827BF031A003669A0 /* Managers */,
+				BE2CDE8527BF0A24003669A0 /* CellView */,
 				BE2CDE7527BEFFDC003669A0 /* Scenes */,
 				BE2CDE7427BEFFA6003669A0 /* Resources */,
 				BE2CDE6D27BEFF22003669A0 /* Info.plist */,
@@ -111,6 +120,37 @@
 				BE2CDE7627BF0007003669A0 /* FirstVC.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		BE2CDE7827BF031A003669A0 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				BE2CDE7927BF0331003669A0 /* Extras.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		BE2CDE7B27BF035D003669A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BE2CDE7E27BF03C4003669A0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BE2CDE7F27BF03D7003669A0 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BE2CDE8527BF0A24003669A0 /* CellView */ = {
+			isa = PBXGroup;
+			children = (
+				BE2CDE8627BF0A47003669A0 /* ForecastCell.swift */,
+			);
+			path = CellView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +268,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE2CDE5D27BEFF21003669A0 /* AppDelegate.swift in Sources */,
+				BE2CDE8027BF03D7003669A0 /* Extensions.swift in Sources */,
+				BE2CDE8727BF0A47003669A0 /* ForecastCell.swift in Sources */,
 				BE2CDE7727BF0007003669A0 /* FirstVC.swift in Sources */,
+				BE2CDE7A27BF0331003669A0 /* Extras.swift in Sources */,
 				BE2CDE6727BEFF21003669A0 /* SecondTask.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

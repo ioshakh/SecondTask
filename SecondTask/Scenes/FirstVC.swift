@@ -6,11 +6,16 @@
 //
 
 import UIKit
+import CoreLocation
+import Alamofire
+import SnapKit
+
 
 class FirstVC: UIViewController {
-
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
+        view.backgroundColor = .white
     }
 }
